@@ -12,8 +12,8 @@ $(document).ready(function () {
         $('#escreve-tarefa').val('')
     })
     
-    $('li').click(function() {
-        $(this).addClass('item-completado');
+     $(document).on('click', 'li', function () {
+        $(this).addClass('item-completado')
     });
     
 
