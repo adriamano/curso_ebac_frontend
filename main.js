@@ -9,12 +9,14 @@ $(document).ready(function () {
         $(`<p>${adicionaTarefa}</p>`).appendTo(novaTarefa);
         $(novaTarefa).appendTo('ul');
         $(novaTarefa).slideDown(500);
+        $('li').click(function() {
+            $(this).addClass('item-completado');
+        });
+
         $('#escreve-tarefa').val('')
+
     })
-    
-     $(document).on('click', 'li', function () {
-        $(this).addClass('item-completado')
-    });
-    
+
+
 
 })
