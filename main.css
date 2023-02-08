@@ -64,6 +64,7 @@ button {
     text-transform: uppercase;
     border-radius: 6px;
     border-style: none;
+    cursor:pointer;
 }
 
 
